@@ -48,8 +48,12 @@ int game(char player , char computer)
     {
         return 1;
     }
+    if (player != 'r' && player != 'p' && player != 's')
+    {
+        printf("Invalid input!\n");
+        exit(0); // Terminates the program
+    }
 }
-
 // UNDER-HOOD CODE.
 int main()
 {
